@@ -1,0 +1,1 @@
+<div class="success">Thank you. Your post has been submitted successfully.</div>
