@@ -1,0 +1,241 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    height: 62px;
+    display: flex;
+    align-items: center;
+    background: black;
+    color: white;
+    padding-left: 12px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: black;
+    color: white;
+}
+
+.footer div {
+    margin: 0 auto;
+}
+
+.page {
+    width: 100%;
+    height: calc(100% - 124px);
+}
+
+.page-title {
+    text-align: center;
+}
+
+form {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid silver;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.form_error {
+    color: crimson;
+}
+@media screen and (min-width: 600px) {
+    form {
+        width: 50%;
+    }
+}
+
+form input {
+    width: 90%;
+    height: 32px;
+    display: block;
+    margin: 0 auto;
+}
+
+form textarea {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.home .content {
+    text-align: center;
+}
+button:hover {
+    cursor: pointer;
+}
+
+.news-row {
+    border: 1px solid black;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 6px;
+}
+
+.page {
+    overflow-y: scroll;
+}
+
+.page.gmap {
+    overflow: hidden;
+    position: relative;
+}
+
+.results {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 150px;
+    border: 1px solid black;
+    left: 10px;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: none;
+    overflow-y: scroll;
+    background-color: black;
+}
+
+.results .place-row {
+    height: 50px;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-bottom: 1px solid azure;
+}
+
+.place-row:hover {
+    background: azure;
+    color: black;
+    cursor: pointer;
+}
+
+.place-name {
+    font-size: 24px;
+}
+
+.place-address {
+    font-size: 16px;
+    width: 300px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-left: 12px;
+}
+
+.page #gmap-search {
+    position: absolute;
+    width: 700px;
+    height: 70px;
+    top: 80px;
+    padding-left: 12px;
+    left: 10px;
+    display: none;
+    color: crimson;
+    border: 3px solid crimson;
+
+}
+
+#gmap-search::placeholder {
+    color: crimson;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+.news-row.important {
+    border: 2px solid aquamarine;
+}
+
+.news-row:hover {
+    background: cornflowerblue;
+    color: white;
+    cursor: pointer;
+}
+
+.news-row.important:hover {
+    background: aquamarine;
+    color: darkblue;
+}
+
+.news-title {
+    text-transform: capitalize;
+    font-size: 22px;
+    text-align: center;
+}
+
+.news-link {
+    margin-top: 10px;
+}
+
+.header a {
+    margin-left: 12px;
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
+.header a:hover {
+    border-bottom: 1px solid white;
+}
+
+.success {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.single {
+    margin-top: 20px;
+}
+
+form label {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.submit-post {
+    background: cornflowerblue;
+    border: none;
+    color: white;
+    height: 32px;
+}
+
+.submit-post:hover {
+    cursor: pointer;
+    background: white;
+    color: cornflowerblue;
+    border: 1px solid cornflowerblue;
+}
+
+@media screen and (min-width: 600px) {
+    .news-row {
+        width: 50%;
+    }
+
+    form label {
+        font-size: 26px;
+    }
+
+
+}
